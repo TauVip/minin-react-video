@@ -82,7 +82,10 @@ class Quiz extends React.Component {
 
   retryHandler = () => {
     this.setState({
-      activeQuestion: 0
+      activeQuestion: 0,
+      answerState: null,
+      isFinished: false,
+      results: {}
     })
   }
 
